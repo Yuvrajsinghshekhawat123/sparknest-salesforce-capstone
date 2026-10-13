@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Escalate_Breached_Case</name>
+        <label>Escalate Breached Case</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>CaseMilestoneBreachAction</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>caseId</name>
+            <value>
+                <elementReference>case_id</elementReference>
+                <inputConfiguratorMode>Resource</inputConfiguratorMode>
+            </value>
+        </inputParameters>
+        <nameSegment>CaseMilestoneBreachAction</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>68.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <environments>Default</environments>
+    <interviewLabel>Escalate_Breached_Case_to_Tier_2 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Escalate Breached Case to Tier 2</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Escalate_Breached_Case</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Case Id</description>
+        <name>case_id</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Premium</fullName>
+    <active>true</active>
+    <description>VIP Premium Drop reservations</description>
+    <label>Premium</label>
+    <picklistValues>
+        <picklist>Reservation_Status__c</picklist>
+        <values>
+            <fullName>Allocated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Queued</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sneaker_Model__c</picklist>
+        <values>
+            <fullName>Air Spark 2026</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nest Runner X10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nest Runner X11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nest Runner X6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nest Runner X7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nest Runner X8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nest Runner X9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

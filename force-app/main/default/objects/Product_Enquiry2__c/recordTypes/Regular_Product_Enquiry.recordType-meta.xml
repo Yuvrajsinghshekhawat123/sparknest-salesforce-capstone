@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Regular_Product_Enquiry</fullName>
+    <active>true</active>
+    <label>Regular Product Enquiry</label>
+    <picklistValues>
+        <picklist>Care_Plan__c</picklist>
+        <values>
+            <fullName>1 Year</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 Year</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>How_Heard_About_Us__c</picklist>
+        <values>
+            <fullName>App</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Walk-in store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

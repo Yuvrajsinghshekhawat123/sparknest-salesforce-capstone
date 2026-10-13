@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Submit_Opportunity_for_Approval</name>
+        <label>Submit Opportunity for Approval</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>submit</actionName>
+        <actionType>submit</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>objectId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+                <inputConfiguratorMode>Resource</inputConfiguratorMode>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>processDefinitionNameOrId</name>
+            <value>
+                <inputConfiguratorMode>Resource</inputConfiguratorMode>
+                <stringValue>Opportunity_Amount_Approval</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>submit</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Amount_Greater_Than_50000</name>
+        <label>Amount Greater Than 50000?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Amount_Above_50000</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Amount</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>50000.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Submit_Opportunity_for_Approval</targetReference>
+            </connector>
+            <label>Amount_Above_50000</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Opportunity Amount Approval Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity Amount Approval Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Amount_Greater_Than_50000</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allows custom permissions for Agentforce Agent : SparkNest_Customer_Support_Agent&apos;s agent user : sparknest_customer_support_agent@00dbm00000tnqxl2126612790.ext.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>SparkNest_Customer_Support_Agent1915869109 Permissions</label>
+    <license>Einstein Agent</license>
+</PermissionSet>

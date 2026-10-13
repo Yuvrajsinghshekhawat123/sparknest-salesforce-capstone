@@ -1,3 +1,5 @@
+# sparknest-salesforce-capstone
+SparkNest Salesforce Capstone Project
 # Salesforce DX Project
 
 Salesforce DX is a development approach that brings source-driven development, team collaboration, and continuous integration to the Salesforce Platform. Instead of working directly in an org through a web browser, you work with metadata as source files in a local DX project, track changes in version control, and deploy through automated processes.

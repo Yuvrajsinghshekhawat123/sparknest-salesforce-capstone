@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <!-- Task 5: Flows -->
+    <types>
+        <members>Convert_to_Case</members>
+        <members>Auto_close_follow_up_tasks</members>
+        <members>Weekly_Enquiry_Summary</members>
+        <name>Flow</name>
+    </types>
+
+    <!-- Task 5: Quick Action -->
+    <types>
+        <members>Enquiry__c.Convert_to_Case</members>
+        <name>QuickAction</name>
+    </types>
+
+    <!-- Task 6 and Task 7: Apex classes -->
+    <types>
+        <members>TriggerDispatcher</members>
+        <members>EnquiryTriggerHandler</members>
+        <members>EnquiryService</members>
+        <members>TestDataFactory</members>
+        <members>EnquiryServiceTest</members>
+        <members>CloseStaleEnquiriesBatch</members>
+        <members>CloseStaleEnquiriesScheduler</members>
+        <members>CloseStaleEnquiriesBatchTest</members>
+        <members>SparkNestEnquiryAPI</members>
+        <name>ApexClass</name>
+    </types>
+
+    <!-- Task 6: Trigger -->
+    <types>
+        <members>EnquiryTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+
+    <version>67.0</version>
+</Package>

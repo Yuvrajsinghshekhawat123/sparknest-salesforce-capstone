@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Generates a customer support response using the customer&apos;s question, Salesforce Case information, and approved Knowledge.</description>
+    <invocationTarget>Case_Support_Response</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <masterLabel>Case Support Response</masterLabel>
+</GenAiFunction>

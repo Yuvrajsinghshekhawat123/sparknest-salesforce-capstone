@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <!-- Task 8: Reports -->
+    <types>
+        <members>SparkNest_Reports</members>
+        <members>SparkNest_Reports/*</members>
+        <name>Report</name>
+    </types>
+
+    <!-- Task 8: Dashboard (format: FolderName/DashboardName) -->
+    <types>
+        <members>SparkNest_Dashboards</members>
+        <members>SparkNest_Dashboards/SparkNest_Sales_Overview</members>
+        <name>Dashboard</name>
+    </types>
+
+    <!-- Task 9: Agentforce - Invocable Apex & Test -->
+    <types>
+        <members>EnquiryStatusLookupAction</members>
+        <members>EnquiryStatusLookupActionTest</members>
+        <name>ApexClass</name>
+    </types>
+
+    <!-- Task 9: Agentforce Topics & Actions -->
+    <types>
+        <members>*</members>
+        <name>GenAiPlugin</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>GenAiFunction</name>
+    </types>
+
+    <!-- Task 9: Agent Definition & Atlas Planner -->
+    <types>
+        <members>SparkNest_Support_Agent</members>
+        <name>Bot</name>
+    </types>
+    <types>
+        <members>SparkNest_Support_Agent</members>
+        <name>GenAiPlannerBundle</name>
+    </types>
+    <version>62.0</version>
+</Package>
